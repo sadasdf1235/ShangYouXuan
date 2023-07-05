@@ -1,0 +1,9 @@
+/* 防止浮动坍塌 */
+.clearfix::after{
+    /* 必须设置内容  */
+    content: "";
+    /* 改为块盒 */
+    display: block;
+    /* 清除浮动 */
+    clear: both;
+}
